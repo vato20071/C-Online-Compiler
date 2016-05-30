@@ -25,6 +25,13 @@ class template {
         return $src;
     }
 
+    /**
+     * Splits template on chunk and returns chunk contents for replacing with values
+     * @param $src
+     * @param $split
+     * @param int $file
+     * @return string
+     */
     function split_template($src, $split, $file = 1) {
         if ($file == 1) {
             $src = file_get_contents($src);
@@ -36,6 +43,14 @@ class template {
         return $text_array[1];
     }
 
+    /**
+     * Replaces template chunk with $content
+     * @param $src
+     * @param $split
+     * @param $content
+     * @param int $file
+     * @return string
+     */
     function replace_split_template($src, $split, $content, $file = 1) {
         if ($file == 1) {
             $src = file_get_contents($src);
@@ -44,6 +59,12 @@ class template {
         return $text_array[0] . $content . $text_array[2];
     }
 
+    /**
+     * Generates loop html from src and replaces fields with values
+     * @param $array
+     * @param $src
+     * @return mixed
+     */
     function generate_loop_html($array, $src) {
         foreach ($array as $key => $value) {
             $src = str_replace("{{:$key:}}", $value, $src);

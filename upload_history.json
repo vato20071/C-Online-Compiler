@@ -10,5 +10,11 @@
     "status": "WA",
     "date": "12:24",
     "test": "7"
+  },
+  {
+    "problem": "B",
+    "status": "OK",
+    "date": "12:25",
+    "test": "N/A"
   }
 ]

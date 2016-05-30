@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online compiler</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            function reload_list() {
+                $.ajax({
+                    type: "GET",
+                    url: "?ajax_reload",
+                    success: function(data) {
+                        $("#list_items").html(data);
+                    }
+                });
+            }
+            setInterval(reload_list, 5000);
+        });
+    </script>
+</head>
+<body>
+    {{:status_list:}}
+</body>
+</html>
