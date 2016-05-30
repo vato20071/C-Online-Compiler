@@ -1,0 +1,17 @@
+.header {
+    float: left;
+    border: 1px solid black;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    width: 100px;
+}
+
+.object {
+    float: left;
+    border: 1px solid black;
+    height: 30px;
+    padding-left: 10px;
+    width: 100px;
+    line-height: 30px;
+}

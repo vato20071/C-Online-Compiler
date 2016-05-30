@@ -4,15 +4,15 @@
 *	Vakhtang Tabatadze
 *	Irakli Chalagashvili
 *	Mariam Bezhashvili
-*	To Be Invited
-*	To Be Invited
+*	Nino Nazghaidze
 
 ### Description
 C-Online-Compiler includes front-end system for uploading file and judge status
-On the backend, it uses python3 to compile file and display result for uploaded file
+On the backend, it uses php to compile file and display result for uploaded file
 Depending on system, uses gcc on linux or gcc.exe (of DEV-C++) on windows
 
 ### CheckList
+*   [*] ***DONE*** Status display formatting
 *	[ ] ***TODO*** Basic file upload
 *	[ ] ***TODO*** Compile system
 *	[ ] ***TODO*** AJAX status update
