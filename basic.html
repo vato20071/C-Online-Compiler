@@ -12,6 +12,7 @@
                     type: "GET",
                     url: "?ajax_reload",
                     success: function(data) {
+                        console.log(data);
                         $("#list_items").html(data);
                     }
                 });
@@ -20,7 +21,12 @@
         });
     </script>
 </head>
-<body>
-    {{:status_list:}}
-</body>
+    <body>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            Select image to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+        </form>
+        {{:status_list:}}
+    </body>
 </html>
