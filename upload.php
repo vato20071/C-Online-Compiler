@@ -30,7 +30,10 @@ if(isset($_POST["submit"])) {
 
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 
-        compile($target_dir, $file_name);
+        $data = compile($target_dir, $file_name);
+        array_push($json, $data);
+        file_put_contents("upload_history.json", json_encode($json));
+        
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
@@ -41,6 +44,7 @@ if(isset($_POST["submit"])) {
     function redirect() {
         window.location.href = "index.php";
     }
+    setTimeout(redirect, 5000);
 
 </script>
 

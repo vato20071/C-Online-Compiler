@@ -10,6 +10,7 @@
 # User-specific stuff:
 uploads/*
 tests/*
+*.json
 .idea/
 .idea/workspace.xml
 .idea/tasks.xml
@@ -60,3 +61,6 @@ dummy.json
 
 # *.iml
 # modules.xml
+alligator.out
+tests.zip
+tests/
