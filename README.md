@@ -17,8 +17,7 @@ Depending on system, uses gcc on linux or gcc.exe (of DEV-C++) on windows
 *	[x] ***TODO*** Basic file upload
 *	[x] ***TODO*** Compile system
 *	[x] ***TODO*** AJAX status update
-*	[ ] ***TODO*** Status codes for updates
-*	[ ] ***TODO*** Advanced file upload with filtering
+*	[x] ***TODO*** Status codes for updates
 
 ### Known Issues
 *	None known

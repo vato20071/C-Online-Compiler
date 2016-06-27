@@ -10,7 +10,6 @@
 # User-specific stuff:
 uploads/*
 tests/*
-*.json
 .idea/
 .idea/workspace.xml
 .idea/tasks.xml
